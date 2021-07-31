@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+      
+}
+
+
+body{
+    background-color:#fed6e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    width: 320px;
+    /* 287 */
+    
+    border: 1px solid #333;
+    /* background-color: #ccc; */
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    padding: 20px;
+    box-shadow: 8px 8px 0 #4b1c1d;
+    border-radius: 20px;
+    
+}
+.calculator form{
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+    grid-auto-rows: 65px;
+    grid-gap:7px
+    
+}
+
+.calculator form .t{
+    margin-bottom: 8px;
+}
+.calculator form input{
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 19px;
+    box-shadow: 1px 4px 0 rgb(0 0 0 / 50%);
+}
+.calculator form input hover{
+    box-shadow: 1px 1px 2px #333;
+}
+.calculator form .clear{
+    background-color: #ed4848 ;
+    
+
+}
+.calculator form .operator{
+    background-color: #fef9d7 ;
+
+}
+.calculator form .dot{
+    background-color: #d299c2;
+}
+.calculator form input[type="text"]{
+    grid-column: span 4;
+    text-align: right;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.calculator form input[type="button"]:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative; 
+    top:2px;
+}
+
+
+.calculator form .clear{
+    grid-column: span 3;
+}
+.calculator form .result{
+    grid-column: span 2;
+}
